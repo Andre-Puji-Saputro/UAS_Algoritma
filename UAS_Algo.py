@@ -1,5 +1,3 @@
-
-# ============ 1. STACK: Riwayat Pemeriksaan ============
 class Stack:
     def __init__(self):
         self.data = []
@@ -24,8 +22,6 @@ class Stack:
         for id_pasien, nama in reversed(self.data):
             print(f"- ID {id_pasien} | {nama}")
 
-
-# ============ 2. QUEUE: Antrean Reguler ============
 class Queue:
     def __init__(self):
         self.data = []
@@ -50,8 +46,6 @@ class Queue:
         for item in self.data:
             print(f"- {item}")
 
-
-# ============ 3: Antrean UGD (Prioritas) ============
 class MaxHeap:
     def __init__(self):
         self.data = []
@@ -106,8 +100,6 @@ class MaxHeap:
         for priority, name in self.data:
             print(f"- [Level {priority}] {name}")
 
-
-# ============ 4. BST: Rekam Medis Pasien ============
 class RekamMedisNode:
     def __init__(self, patient_id, name, diagnosis):
         self.id = patient_id
@@ -188,8 +180,6 @@ class BST:
             return 0
         return 1 + self._count(node.left) + self._count(node.right)
 
-
-# ============ 5. PROGRAM UTAMA (Integrasi Sistem) ============
 def input_angka(teks):
     while True:
         nilai = input(teks)
